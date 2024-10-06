@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Game</title>
+    <link rel="stylesheet" href="way.css">
+</head>
+<body>
+    <div id="rules" class="instructions">
+        <h2>Game Rules:</h2>
+        <p>1. You can move either Horizontal or Vertical.</p>
+        <p>2. Start by generating the matrix using the 'Start Game' button.</p>
+        <p>3. Select a path and submit your path.</p>
+    </div>
+
+    <h1>MinWay Game</h1>
+    
+    <!-- Start and Generate Button -->
+    <button id="generateButton">Start Game</button>
+    
+    <!-- Matrix Container -->
+    <div id="matrixContainer"></div>
+    
+    <!-- Submit Button (hidden initially) -->
+    <button id="submitButton" style="display: none;">Submit Path</button>
+    
+    <!-- Result Display -->
+    <div id="result"></div>
+    
+    <script src="way.js"></script>
+</body>
+</html>

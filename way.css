@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+p{
+    display: flex;
+    margin-left: 3rem;
+}
+h1 {
+    color: #e6af63;
+    margin-top: 30px;
+    font-size: 3rem;
+}
+
+#rules {
+    background-color: #1d2632;
+    border: 2px solid #f39c12;
+    padding: 20px;
+    margin: 20px auto;
+    width: 40%;
+    border-radius: 10px;
+    font-size: 15px;
+
+}
+
+
+#generateButton, #submitButton {
+    margin-top: 20px;
+    padding: 15px 30px;
+    display: flex;
+    font-size: 1.5rem;
+    background-color: #8259ad;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 43%;
+}
+
+#generateButton:hover, #submitButton:hover {
+    background-color: #1b1a1a;
+}
+
+#matrixContainer {
+    display: none; /*Initially hidden*/
+    margin-top: 30px;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #061a27;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell.selected {
+    background-color: #27ae60; /* Highlight selected path */
+}
+
+.cell.highlight {
+    background-color: #224e9a; /* Highlight the path on submit */
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #e9a943;
+}
